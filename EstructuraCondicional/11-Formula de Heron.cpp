@@ -9,25 +9,26 @@ A=sqrt(p(p-a)(p-b)(p-c)).
 
 using namespace std;
 
-int main(){
+int main()
+{
 	float a, b, c, p, area; // Lados, semiperimetro, area
-	
-	cout<<"Ingrese el lado 'a': ";
-	cin>>a;
-	cout<<"Ingrese el lado 'b': ";
-	cin>>b;	
-	cout<<"Ingrese el lado 'c': ";
-	cin>>c;
-	
-	p=(a+b+c)/2;
-	area=sqrt(p*(p-a)*(p-b)*(p-c));
-	
-	if(p>a && p>b && p>c){
-		cout<<	"Se puede formar un triangulo."<<
-				"\nEl area del triangulo es: "<<area<<"cm^2"<<endl;
+
+	cout << "Ingrese el lado 'a': ";
+	cin >> a;
+	cout << "Ingrese el lado 'b': ";
+	cin >> b;
+	cout << "Ingrese el lado 'c': ";
+	cin >> c;
+
+	p = (a + b + c) / 2;
+	area = sqrt(p * (p - a) * (p - b) * (p - c));
+
+	if (p > a && p > b && p > c)
+	{
+		cout << "Se puede formar un triangulo."
+			 << "\nEl area del triangulo es: " << area << "cm^2" << endl;
 	}
-	
-	
+
 	system("pause");
 	return 0;
 }

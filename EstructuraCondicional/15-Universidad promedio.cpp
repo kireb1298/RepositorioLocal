@@ -16,39 +16,44 @@ ha sido clasificado el alumno
 
 using namespace std;
 
-int main(){
+int main()
+{
 	float t, m, f, p;
-	
-	cout<<"Ingrese las 3 notas con numeros del 0 al 20.\n";
-	do{
-		cout<<"Ingrese nota 'T': ";
-		cin>>t;
-	}while(t<0 || t>20);
-	do{
-		cout<<"Ingrese nota 'M': ";
-		cin>>m;
-	}while(m<0 || m>20);
-	do{
-		cout<<"Ingrese nota 'F': ";
-		cin>>f;
-	}while(f<0 || f>20);
-	
-	t=t*0.5;
-	m=m*0.2;
-	f=f*0.3;
-	p=t+m+f;
-	
-	if(p>=16 && p<=20)
-		cout<<"Su nota es "<<p<<" y ha sido clasificado como 'Bueno'."<<endl;
-	
-	else if(p>=11 && p<=15)
-		cout<<"Su nota es "<<p<<" y ha sido clasificado como 'Regular'."<<endl;
-		
-	else if(p>=6 && p<=10)
-		cout<<"Su nota es "<<p<<" y ha sido clasificado como 'Malo'."<<endl;
-	
-	else cout<<"Su nota es "<<p<<" y ha sido clasificado como 'Pesimo'."<<endl;	
-	
+
+	cout << "Ingrese las 3 notas con numeros del 0 al 20.\n";
+	do
+	{
+		cout << "Ingrese nota 'T': ";
+		cin >> t;
+	} while (t < 0 || t > 20);
+	do
+	{
+		cout << "Ingrese nota 'M': ";
+		cin >> m;
+	} while (m < 0 || m > 20);
+	do
+	{
+		cout << "Ingrese nota 'F': ";
+		cin >> f;
+	} while (f < 0 || f > 20);
+
+	t = t * 0.5;
+	m = m * 0.2;
+	f = f * 0.3;
+	p = t + m + f;
+
+	if (p >= 16 && p <= 20)
+		cout << "Su nota es " << p << " y ha sido clasificado como 'Bueno'." << endl;
+
+	else if (p >= 11 && p <= 15)
+		cout << "Su nota es " << p << " y ha sido clasificado como 'Regular'." << endl;
+
+	else if (p >= 6 && p <= 10)
+		cout << "Su nota es " << p << " y ha sido clasificado como 'Malo'." << endl;
+
+	else
+		cout << "Su nota es " << p << " y ha sido clasificado como 'Pesimo'." << endl;
+
 	system("pause");
 	return 0;
 }

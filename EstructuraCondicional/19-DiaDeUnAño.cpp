@@ -1,3 +1,9 @@
+/*
+Dado un numero de dia de un determinado año, encuentre el dia, mes y el año al que corresponde.
+Por ejemplo, ek dia numero 300 del año 2000 es el 26/10/2000. Tenga en cuenta que el
+numero de dias de cada mes es: enero 31, febrero 28 o 29, marzo 31, abril 30, mayo 31, 
+junio 30, julio 31, agosto 31, septiembre 30, octubre 31, noviembre 30 y diciembre 31.
+*/
 #include <iostream>
 using namespace std;
 int main()
