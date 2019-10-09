@@ -1,6 +1,7 @@
 /*
 Dada una fecha, diga que dia de la semana fue, sabiendo que el 1 de enero de 1900 fue 
-lunes
+lunes.
+https://www.gaussianos.com/como-calcular-que-dia-de-la-semana-fue/
 */
 
 #include <iostream>
