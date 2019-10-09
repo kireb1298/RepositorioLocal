@@ -1,1 +1,1 @@
-Ejercicios de todo tipo de c++
+Ejercicios de programacion.
