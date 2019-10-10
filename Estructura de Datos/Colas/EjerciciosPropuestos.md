@@ -3,7 +3,7 @@
 1) Todas las doncellas del reino hacen cola para probarse el zapato de la cenicienta. Si la talla
 es x diga ¿Quién es la cenicienta?
 
-2) Se tiene n colas, una en una única cola. Sugerencia: use un arreglo de colas ( cola q[LIM]
+2) Se tiene n colas, una en una única cola. Sugerencia: use un arreglo de colas (cola q[LIM]
 por ejemplo) para almacenar n colas.
 
 3) Se tiene una cola de personas y se desea dividirla en otras colas según la edad. Cree una
