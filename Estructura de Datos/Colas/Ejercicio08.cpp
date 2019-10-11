@@ -31,7 +31,7 @@ int main()
     std::cout << "Elementos de la cola 2" << std::endl;
     registro(b);
     std::cout << "Elementos en Comun:" << std::endl;
-    eComun(a,b);
+    eComun(a, b);
     std::cout << std::endl;
     system("pause");
     return 0;
@@ -44,7 +44,7 @@ void registro(Cola &c)
     std::cout << "Digite el numero de elementos: ";
     std::cin >> n;
 
-    for(int i = 1; i<=n; i++)
+    for (int i = 1; i <= n; i++)
     {
         std::cout << "Elemento " << i << ": ";
         std::cin >> x;
@@ -100,7 +100,7 @@ void eComun(Cola &a, Cola &b)
         aux2 = b.primero;
         while (aux2 != NULL)
         {
-            if(aux1->info == aux2->info)
+            if (aux1->info == aux2->info)
                 std::cout << aux1->info << "    ";
 
             aux2 = aux2->sgte;

@@ -32,7 +32,7 @@ int main()
         n /= 10;
     }
     std::cout << "Al reves se escribe: ";
-    while(!empty(c))
+    while (!empty(c))
     {
         x = dequeue(c);
         std::cout << x;
