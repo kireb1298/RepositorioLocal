@@ -258,10 +258,6 @@ void menuOpcion1(Informacion e, Trabajador g)
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
     std::cout << e.direccion<< std::endl;
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);
-    std::cout << "\tRAZON SOCIAL: ";
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-    std::cout << e.razonSocial<< std::endl;
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);
     std::cout << "\tTELEFONO: ";
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
     std::cout << e.telefono<< std::endl;
@@ -305,3 +301,4 @@ void menuOpcion1(Informacion e, Trabajador g)
     
 
 }
+

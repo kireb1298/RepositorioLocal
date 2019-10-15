@@ -4,7 +4,6 @@
 int main()
 {
     std::string text;
-    int memory1, memory2;
     std::ifstream comprobar("DATA.dat", std::ios::binary);
     bool band1 = (!comprobar) ? true : false;
     comprobar.close();
@@ -16,7 +15,7 @@ int main()
     if (band1)
     {
         AjustarVentana(100, 50);
-        instalacion();  
+        instalacion();
     }
     else
     {
@@ -56,11 +55,8 @@ int main()
         std::cout << "\tEL ARCHIVO [EMPLEADOS.dat] HA SIDO CARGADO CON EXITO..." << std::endl;
 
         system("pause");
-        system("cls");
 
         leerInfo.read((char *)&infoEmpresa, sizeof(Informacion));
-        memory1 = infoEmpresa.nVehiculos;
-        memory2 = infoEmpresa.nEmpleados;
 
         leerMachine.seekg(0, std::ios::beg);
         leerMachine.read((char *)&maqui, sizeof(maqui));
@@ -79,6 +75,7 @@ int main()
         }
         do
         {
+            system("cls");
             titulo(infoEmpresa);
             menuMain();
             std::cin >> opc1;
@@ -94,31 +91,68 @@ int main()
                 menuOpcion1(infoEmpresa, empleado);
                 std::cout << std::endl;
                 system("pause");
-                system("cls");
                 break;
 
             case 2:
+                titulo(infoEmpresa);
                 menuOpcion2();
                 std::cin >> opc2;
+                while (opc2 < 1 || opc2 > 5)
+                {
+                    std::cout << "Digite una opcion valida: ";
+                    std::cin >> opc2;
+                }
+
                 switch (opc2)
                 {
                 case 1:
-                    
+
                     break;
-                
-                default:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
                     break;
                 }
                 break;
             case 3:
-                std::cout << "test";
+                titulo(infoEmpresa);
+                menuOpcion3();
+                std::cin >> opc2;
+                while (opc2 < 1 || opc2 > 5)
+                {
+                    std::cout << "Digite una opcion valida: ";
+                    std::cin >> opc2;
+                }
+                std::cout << std::endl;
+                system("pause");
                 break;
             case 4:
+                titulo(infoEmpresa);
+                menuOpcion4();
+                std::cin >> opc2;
+                while (opc2 < 1 || opc2 > 5)
+                {
+                    std::cout << "Digite una opcion valida: ";
+                    std::cin >> opc2;
+                }
+                std::cout << std::endl;
+                system("pause");
                 break;
             case 5:
+                titulo(infoEmpresa);
+                menuOpcion5();
+                std::cin >> opc2;
+                while (opc2 < 1 || opc2 > 5)
+                {
+                    std::cout << "Digite una opcion valida: ";
+                    std::cin >> opc2;
+                }
+                std::cout << std::endl;
+                system("pause");
                 break;
             }
-        }while(opc1 != 6);
+        } while (opc1 != 6);
         leerInfo.close();
         leerMachine.close();
         leerEmple.close();

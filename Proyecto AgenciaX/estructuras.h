@@ -10,6 +10,7 @@ struct Trabajador
     int edad;
     int annIngreso;                                     //ANNO DE INGRESO
     char email[70];
+    float sueldo;
 };
 
 struct Vehiculo
