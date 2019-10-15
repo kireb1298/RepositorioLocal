@@ -81,4 +81,3 @@ struct ColaE
     PNodoe primero;
     PNodoe ultimo;
 };
-

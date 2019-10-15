@@ -301,4 +301,3 @@ void menuOpcion1(Informacion e, Trabajador g)
     
 
 }
-
