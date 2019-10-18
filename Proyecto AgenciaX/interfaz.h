@@ -93,7 +93,9 @@ void menuMain()
         << "\t\t3 >> Empleados\n"
         << "\t\t4 >> Clientes\n"
         << "\t\t5 >> Encargos\n"
-        << "\t\t6 >> Salir\n\n";
+        << "\t\t6 >> Guardar(*)\n"
+        << "\t\t7 >> Salir."
+        << "\n\n";
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 9);
     std::cout << "\t\tIngrese una opcion: ";
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
@@ -134,14 +136,15 @@ void menuOpcion3()
 void menuOpcion4()
 {
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
-    std::cout << "\t\t\t[ MENU EMPLEADOS ]\n\n";
+    std::cout << "\t\t\t[ MENU CLIENTES ]\n\n";
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
     std::cout 
         << "\t\t1 >> Ver todos los clientes.\n"
         << "\t\t2 >> Anadir cliente\n"
         << "\t\t3 >> Borrar cliente\n"
         << "\t\t4 >> Buscar cliente\n"
-        << "\t\t5 >> Volver\n\n";
+        << "\t\t5 >> Cambiar preferencia\n"
+        << "\t\t6 >> Volver\n\n";
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 9);
     std::cout << "\t\tIngrese una opcion: ";
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
@@ -156,7 +159,7 @@ void menuOpcion5()
         << "\t\t1 >> Ver todos los encargos.\n"
         << "\t\t2 >> Anadir encargo\n"
         << "\t\t3 >> Borrar encargo\n"
-        << "\t\t4 >> Buscar encargo\n"
+        << "\t\t4 >> Buscar encargos\n"
         << "\t\t5 >> Volver\n\n";
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 9);
     std::cout << "\t\tIngrese una opcion: ";

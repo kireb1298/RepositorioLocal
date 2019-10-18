@@ -25,12 +25,22 @@ struct Vehiculo
 
 struct Cliente
 {
-    int nro;
     char dni[15];
     char nombre[40];
     char apellido[40];
     int preferencia;
+    int nEncargos;
+    int encargos[10];
+};
 
+struct Encargo
+{
+    int codigo;
+    char direccion[50];
+    char codPostal[30];
+    char descripcion[40];
+    char dniCliente[15];
+    int priority;
 };
 
 /*
@@ -50,6 +60,7 @@ struct Informacion
     int nVehiculos;
     int nEmpleados;
     int nClientes;
+    int nEncargos;
     char tipo[50];
     char telefono[14];
 };
@@ -69,6 +80,20 @@ struct NodoE
 };
 typedef NodoE *PNodoe;
 
+struct NodoC
+{
+    Cliente info;
+    NodoC *sgte;
+};
+typedef NodoC *PNodoc;
+
+struct NodoP
+{
+    Encargo info;
+    NodoP *sgte;
+};
+typedef NodoP *PNodop;
+
 struct ColaV
 {
     PNodov primero;
@@ -80,4 +105,16 @@ struct ColaE
 {
     PNodoe primero;
     PNodoe ultimo;
+};
+
+struct ColaC
+{
+    PNodoc primero;
+    PNodoc ultimo;
+};
+
+struct ColaP
+{
+    PNodop primero;
+    PNodop ultimo;
 };
